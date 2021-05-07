@@ -1,0 +1,286 @@
+/*Generales*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.title-subtitle {
+  font-family: "Open Sans", sans-serif;
+}
+.parrafos {
+  font-family: "Roboto", sans-serif;
+}
+.nav-desktop {
+  display: none;
+}
+/*Portada*/
+.container-portada {
+  width: 100vw;
+  margin: 0px auto;
+  padding: 20px 20px 0px 20px;
+}
+.portada-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.icono-book {
+  width: 54px;
+  height: 50px;
+}
+.fa-bars {
+  font-size: 30px;
+}
+.portada-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.avatar {
+  width: 300px;
+  height: 265px;
+}
+/*Soy Ana*/
+.container-presentacion {
+  background-color: #141414;
+  width: 100%;
+  color: #fafafa;
+  padding: 52px 31px;
+}
+.presentacion-interior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo-soy {
+  text-align: center;
+  font-style: 32px;
+  margin-bottom: 42px;
+}
+.p-presentacion {
+  margin-bottom: 57px;
+  font-size: 16px;
+}
+.fa-check-square {
+  font-size: 60px;
+  border-radius: 10px;
+  width: 55px;
+  color: #ffd953;
+  background-color: #4caf50;
+}
+/*Servicios*/
+.container-servicios {
+  padding: 52px 56px;
+}
+.subtitulo-servicios {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 42px;
+  color: #2c2c2c;
+}
+.item-servicios {
+  text-align: center;
+}
+.item-servicios:not(:last-child) {
+  margin-bottom: 100px;
+}
+.img-servicios {
+  width: 138px;
+  height: 128px;
+  margin-bottom: 18px;
+}
+.sub-serv {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.p-servicios {
+  font-size: 16px;
+}
+/*Escribime*/
+.container-escribime {
+  width: 100%;
+  padding: 52px 20px;
+  background-color: #141414;
+  color: #fafafa;
+}
+
+.subtitulo-escribime {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.input-form {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.item-msj {
+  height: 100px;
+  margin-bottom: 60px;
+}
+.btn-enviar {
+  background-color: #ffd953;
+  border: none;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #141414;
+  font-weight: bold;
+}
+/*Footer*/
+.container-footer {
+  width: 100%;
+  background-color: #dbdbdb;
+  padding: 52px 20px;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 85px;
+}
+.icono-book {
+  margin-bottom: 16px;
+}
+.span-footer {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+}
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+}
+.probando {
+  display: flex;
+}
+.fab {
+  color: #2c2c2c;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.fab:before {
+  color: #000000;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/*Versión pantalla grande*/
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  /*Portada*/
+  .container-portada {
+    padding: 36px 80px 0px 80px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .icono-book {
+    width: 95px;
+    height: 109px;
+  }
+  .fa-bars::before {
+    display: none;
+  }
+  .nav-desktop {
+    display: flex;
+    font-size: 24px;
+  }
+  .item-nav:not(:last-child) {
+    margin-right: 80px;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .portada-titulo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .titulo {
+    font-size: 48px;
+    width: 30%;
+  }
+  .avatar {
+    width: 25%;
+    height: 300px;
+  }
+  /*Quien soy*/
+  .container-presentacion {
+    width: 100%;
+    padding: 132px 0px;
+  }
+  .presentacion-interior {
+    width: 60%;
+    flex-direction: row-reverse;
+    margin: auto;
+  }
+  .fa-check-square {
+    font-size: 150px;
+    width: 150px;
+  }
+  .presentacion {
+    margin-left: 90px;
+  }
+  .subtitulo-soy {
+    font-size: 32px;
+    text-align: left;
+  }
+  .p-presentacion {
+    font-size: 24px;
+  }
+  /*Servicios*/
+  .container-servicios {
+    padding: 59px 84px 0px 84px;
+  }
+  .subtitulo-servicios {
+    font-size: 48px;
+  }
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 233px;
+  }
+  /*Escribime*/
+  .subtitulo-escribime {
+    font-size: 48px;
+  }
+  .escribime-interior {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  /*Footer*/
+  .container-footer {
+    padding-bottom: 0px;
+  }
+  .footer-interior {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
